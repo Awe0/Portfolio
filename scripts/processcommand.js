@@ -3,7 +3,7 @@ function processCommand(command) {
     const args = command.trim().split(' ');
     switch (args[0]) {
         case 'help':
-            log.innerHTML += "Available commands: help, clear, banner, git, email, cv, whoru<br>";
+            log.innerHTML += "Available commands: help, clear, banner, git, email, cv, whoru, linkedin<br>";
             break;
         case 'clear':
             log.innerHTML = '';
@@ -33,6 +33,10 @@ function processCommand(command) {
             } else {
                 log.innerHTML += "Usage: whoru [args].<br>&nbsp&nbsp&nbsp[args]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspset: set your name<br><br>&nbsp&nbsp&nbsp[Examples]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwhoru set yourname";
             }
+            break;
+        case 'linkedin':
+            log.innerHTML += "Opening my linkedin account in a new tab...";
+            window.open(windowLinkedin)
             break;
         default:
             log.innerHTML += `${command}: command not found<br>`;
