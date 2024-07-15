@@ -27,9 +27,9 @@ function processCommand(command) {
             window.open(cv, '_blank');
             break;
         case 'whoru':
-            if (args.length > 1 && args[1] === 'set' && args.length > 2) {
+            if (args.length > 1 && args[1] === 'set') {
                 whoIsWriting(args[2])
-                log.innerHTML += `Hello ${args[2]} ! <br>`;
+                log.innerHTML += `Hi ${args[2]} ! <br>`;
             } else {
                 log.innerHTML += "Usage: whoru [args].<br>&nbsp&nbsp&nbsp[args]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspset: set your name<br><br>&nbsp&nbsp&nbsp[Examples]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwhoru set yourname";
             }
