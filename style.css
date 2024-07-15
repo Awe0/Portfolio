@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body {
+    background-color: rgb(10, 10, 36);
+    color: rgb(0, 255, 64);
+    font-family: "Kode Mono", monospace;
+}
+
+#app {
+    overflow: auto;
+    margin: 1rem;
+    height: 96vh;
+    background-color: rgb(6, 6, 19);
+    border-style: inset;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#promptName {
+    margin-left: 1em;
+}
+
+p {
+    margin: 0;
+}
+
+#log {
+    margin-left: 1em;
+    overflow: auto;
+    max-height: calc(96vh - 8rem); 
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#input {
+    font-family: "Kode Mono", monospace;
+    background-color: rgb(6, 6, 19);
+    color: rgb(0, 255, 64); 
+    border: none;
+    outline: none;
+    width: 80vw;
+    font-size: 1em;
+    margin-left: 0.8vh;
+}
+
+#promptH1, .prompt-inline {
+    font-size: inherit;
+    margin: 0;
+    display: inline;
+}
+
+#user {
+    font-weight: bold;
+    color: orange;
+}
+
+#at {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+#me {
+    font-weight: bold;
+    color: rgb(37, 139, 97);
+}
+
+#tilde {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+#pre{
+    margin-left: 1rem;
+}
