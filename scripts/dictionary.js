@@ -3,6 +3,7 @@ const log = document.getElementById("log");
 const promptName = document.getElementById("promptName");
 const pre = document.getElementById("pre");
 const windowGitHub = "https://github.com/Awe0";
+const windowLinkedin = "https://www.linkedin.com/in/allan-delatuillerie-39781b2b3/";
 const cv = "src/cv.pdf";
 
 const asciiArt = `
