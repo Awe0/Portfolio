@@ -10,7 +10,7 @@ function createPromptName() {
     const variableName = ["user", "at", "me", "tilde"];
     for (let i = 0; i < promptNameArray.length; i++) {
         const span = document.createElement("span");
-        span.setAttribute("id", variableName[i]);
+        span.setAttribute("class", variableName[i]);
         span.textContent = promptNameArray[i];
         promptNameH1.appendChild(span);
     }
@@ -19,6 +19,8 @@ function createPromptName() {
 }
 
 function whoIsWriting(who) {
-    const user = document.getElementById("user")
-    user.textContent = who
+    const users = document.querySelectorAll(".user");
+    users.forEach(user => {
+        user.innerHTML = who;
+    });
 }

@@ -54,22 +54,22 @@ p {
     display: inline;
 }
 
-#user {
+.user {
     font-weight: bold;
     color: orange;
 }
 
-#at {
+.at {
     font-weight: bold;
     color: antiquewhite;
 }
 
-#me {
+.me {
     font-weight: bold;
     color: rgb(37, 139, 97);
 }
 
-#tilde {
+.tilde {
     font-weight: bold;
     color: antiquewhite;
 }
