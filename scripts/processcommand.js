@@ -1,6 +1,6 @@
 function processCommand(command) {
-    const commandParsed = command.trim().toLowerCase();
-    const args = command.trim().split(' ');
+    const commandParsed = command.trim().toLowerCase().split(' ');
+    const args = commandParsed;
     switch (args[0]) {
         case 'help':
             log.innerHTML += "Available commands: help, clear, banner, git, email, cv, whoru, linkedin<br>";
