@@ -43,6 +43,7 @@ function processCommand(command) {
             break;
         case 'dataviz':
             log.innerHTML += "Opening Dataviz in a new tab...";
+            window.open(windowDataviz)
             break
         default:
             log.innerHTML += `${command}: command not found<br>`;
