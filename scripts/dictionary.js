@@ -8,6 +8,7 @@ const windowGitHub = "https://github.com/Awe0";
 const windowLinkedin = "https://www.linkedin.com/in/allan-delatuillerie-39781b2b3/";
 const windowDataviz = "https://awe0.github.io/dataviz.github.io/";
 const windowAdaFarm = "https://awe0.github.io/adafarm.github.io/";
+const windowSudo = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 const cv = "src/cv.pdf";
 
 const asciiArt = `

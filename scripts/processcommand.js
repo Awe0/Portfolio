@@ -52,6 +52,9 @@ function processCommand(command) {
         case 'exit':
             log.innerHTML += "You can click on the Ⓧ at the top right of this window. See ya! ";
             break;
+        case 'sudo':
+            window.open(windowSudo)
+            break
         default:
             log.innerHTML += `${command}: command not found<br>`;
             break;
