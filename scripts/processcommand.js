@@ -16,8 +16,8 @@ function processCommand(command) {
             log.appendChild(newBanner);
             break;
         case 'projects':
-            log.innerHTML += `Which project do you want to see ? ${br}- dataviz${br}- none`
-            break
+            log.innerHTML += `Which project do you want to see ? ${br}- dataviz${br}- picogame${br}- `
+            break;
         case 'git':
             log.innerHTML += "Opening my GitHub in a new tab...";
             window.open(windowGitHub)
@@ -44,7 +44,11 @@ function processCommand(command) {
         case 'dataviz':
             log.innerHTML += "Opening Dataviz in a new tab...";
             window.open(windowDataviz)
-            break
+            break;
+        case 'picogame':
+            log.innerHTML += `Controls: Start game = Ⓝ Plant = Ⓧ Move = ↑ ↓ → ←${br}`
+            openPico();
+            break;
         default:
             log.innerHTML += `${command}: command not found<br>`;
             break;
