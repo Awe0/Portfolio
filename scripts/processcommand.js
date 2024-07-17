@@ -3,7 +3,7 @@ function processCommand(command) {
     const args = commandParsed;
     switch (args[0]) {
         case 'help':
-            log.innerHTML += "Available commands: help, clear, banner, projects, git, email, cv, whoru, linkedin<br>";
+            log.innerHTML += "Available commands: help, clear, banner, projects, git, email, cv, whoru, linkedin, exit<br>";
             break;
         case 'clear':
             log.innerHTML = '';
@@ -48,6 +48,9 @@ function processCommand(command) {
         case 'picogame':
             log.innerHTML += `Controls: Start game = Ⓝ Plant = Ⓧ Move = ↑ ↓ → ←${br}`
             openPico();
+            break;
+        case 'exit':
+            log.innerHTML += "You can click on the Ⓧ at the top right of this window. See ya! ";
             break;
         default:
             log.innerHTML += `${command}: command not found<br>`;
