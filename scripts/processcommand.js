@@ -3,7 +3,7 @@ function processCommand(command) {
     const args = commandParsed;
     switch (args[0]) {
         case 'help':
-            log.innerHTML += "Available commands: help, clear, banner, git, email, cv, whoru, linkedin<br>";
+            log.innerHTML += "Available commands: help, clear, banner, projects, git, email, cv, whoru, linkedin<br>";
             break;
         case 'clear':
             log.innerHTML = '';
@@ -15,6 +15,9 @@ function processCommand(command) {
             newBanner.innerHTML = asciiArt;
             log.appendChild(newBanner);
             break;
+        case 'projects':
+            log.innerHTML += `Which project do you want to see ? ${br}- dataviz${br}- none`
+            break
         case 'git':
             log.innerHTML += "Opening my GitHub in a new tab...";
             window.open(windowGitHub)
@@ -31,13 +34,16 @@ function processCommand(command) {
                 whoIsWriting(args[2])
                 log.innerHTML += `Hi ${args[2]} ! <br>`;
             } else {
-                log.innerHTML += "Usage: whoru [args].<br>&nbsp&nbsp&nbsp[args]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspset: set your name<br><br>&nbsp&nbsp&nbsp[Examples]:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwhoru set yourname";
+                log.innerHTML += `Usage: whoru [args].${br}[args]:${br}${sp}set: set your name<br>${br}[Examples]:${br}${sp}whoru set yourname`;
             }
             break;
         case 'linkedin':
             log.innerHTML += "Opening my linkedin account in a new tab...";
             window.open(windowLinkedin)
             break;
+        case 'dataviz':
+            log.innerHTML += "Opening Dataviz in a new tab...";
+            break
         default:
             log.innerHTML += `${command}: command not found<br>`;
             break;
