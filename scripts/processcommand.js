@@ -16,7 +16,7 @@ function processCommand(command) {
             log.appendChild(newBanner);
             break;
         case 'projects':
-            log.innerHTML += `Which project do you want to see ? ${br}- dataviz${br}- picogame${br}- `
+            log.innerHTML += `Which project do you want to see ? ${br}- dataviz${br}- picogame${br}`
             break;
         case 'git':
             log.innerHTML += "Opening my GitHub in a new tab...";
